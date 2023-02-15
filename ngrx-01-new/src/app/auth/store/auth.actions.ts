@@ -35,6 +35,7 @@ export class AuthenticateFail implements Action {
   constructor(public payload: string) {}
 }
 
+//Receate SignUp Start
 export class SignupStart implements Action {
   readonly type = SIGNUP_START;
 
