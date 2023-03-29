@@ -12,7 +12,10 @@ import { HighlightDirective } from 'src/app/shared/highlight.directive';
   providers: [AnalyticsService]
 })
 export class DetailsComponent {
+
+  //import service from analytic service"
   constructor(private analyticsService: AnalyticsService) {}
+
 
   onClick() {
     this.analyticsService.registerClick();
