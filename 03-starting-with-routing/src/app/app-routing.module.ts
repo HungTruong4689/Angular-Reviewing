@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 
 import { WelcomeComponent } from './welcome/welcome.component';
 
+//create the routing
 const routes: Route[] = [
   {
     path: '',
