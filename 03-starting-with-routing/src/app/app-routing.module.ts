@@ -26,6 +26,7 @@ const routes: Route[] = [
   },
 ];
 
+//using forRoot to connect to routes
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
