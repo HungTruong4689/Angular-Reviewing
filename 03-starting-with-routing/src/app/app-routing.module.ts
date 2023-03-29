@@ -13,6 +13,8 @@ const routes: Route[] = [
   {
     path: 'about',
     //component: AboutComponent,
+
+    //connect to the component
     loadComponent: ()=> import('./about/about.component').then(mod => mod.AboutComponent)
   },
   {
