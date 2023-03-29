@@ -13,6 +13,7 @@ import { HighlightDirective } from 'src/app/shared/highlight.directive';
 export class DetailsComponent {
   constructor(private analyticsService: AnalyticsService) {}
 
+  //connect to children function
   onClick() {
     this.analyticsService.registerClick();
   }
