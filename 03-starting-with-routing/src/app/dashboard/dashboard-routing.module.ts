@@ -16,6 +16,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
+  //using forChild to connect to children route
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
