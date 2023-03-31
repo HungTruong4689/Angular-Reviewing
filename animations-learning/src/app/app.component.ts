@@ -172,6 +172,7 @@ export class AppComponent {
   wildState = 'normal';
   list = ['Milk', 'Sugar', 'Bread'];
 
+  //set function to change state animotion
   onAnimate() {
     this.state === 'normal'
       ? (this.state = 'highlighted')
