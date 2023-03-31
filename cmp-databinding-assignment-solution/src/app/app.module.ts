@@ -16,6 +16,7 @@ import { EvenComponent } from './even/even.component';
     OddComponent,
     EvenComponent
   ],
+  //import the module
   imports: [
     BrowserModule,
     FormsModule,
