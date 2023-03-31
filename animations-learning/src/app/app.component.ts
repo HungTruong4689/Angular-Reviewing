@@ -182,6 +182,7 @@ export class AppComponent {
       : (this.wildState = 'normal');
   }
 
+  //choose the wildState to set function
   onShrink() {
     this.wildState = 'shrunken';
   }
