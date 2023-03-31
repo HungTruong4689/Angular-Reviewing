@@ -31,6 +31,7 @@ import { Component } from '@angular/core';
       transition('normal => highlighted', animate(300)),
       //transition('highlighted => normal', animate(800)),
     ]),
+    //trigger to set state
     trigger('wildState', [
       state(
         'normal',
