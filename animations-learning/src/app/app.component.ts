@@ -54,6 +54,7 @@ import { Component } from '@angular/core';
           transform: 'translateX(0) scale(0.5)',
         })
       ),
+      //transition method
       transition('normal => highlighted', animate(300)),
       transition('highlighted => normal', animate(800)),
       transition(
