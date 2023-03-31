@@ -16,7 +16,7 @@ export class DetailsComponent {
   //import service from analytic service"
   constructor(private analyticsService: AnalyticsService) {}
 
-
+  //analytic Service function
   onClick() {
     this.analyticsService.registerClick();
   }
