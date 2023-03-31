@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   forbiddenUsernames = ['Chris', 'Anna'];
 
   ngOnInit() {
+    //setup from group
     this.signupForm = new FormGroup({
       userData: new FormGroup({
         username: new FormControl(null, [
