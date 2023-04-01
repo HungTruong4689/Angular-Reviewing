@@ -63,6 +63,7 @@ export class PostsService {
         })
       );
   }
+  //delete post the link
   deletePosts() {
     return this.http
       .delete(
