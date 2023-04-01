@@ -16,6 +16,7 @@ export class PostsService {
   constructor(private http: HttpClient) {}
   createAndStorePost(title: string, content: string) {
     const postData: Post = { title: title, content: content };
+    //embedded link post
     this.http
       .post<{ name: string }>(
         "https://ng-complete-guide-b21b1-default-rtdb.firebaseio.com/posts.json",
