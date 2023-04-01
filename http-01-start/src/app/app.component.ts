@@ -23,6 +23,7 @@ export class AppComponent implements OnInit, OnDestroy {
     this.errorSub = this.postsService.error.subscribe((errorMessage) => {
       this.error = errorMessage;
     });
+    //fetching value
     this.isFetching = true;
     this.postsService.fetchPost().subscribe(
       (posts) => {
