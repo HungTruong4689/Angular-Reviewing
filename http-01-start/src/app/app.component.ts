@@ -18,6 +18,8 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(private http: HttpClient, private postsService: PostsService) {}
 
   ngOnInit() {
+
+    //setup errorSub
     this.errorSub = this.postsService.error.subscribe((errorMessage) => {
       this.error = errorMessage;
     });
