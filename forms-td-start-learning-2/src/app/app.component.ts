@@ -42,6 +42,8 @@ export class AppComponent {
   // onSubmit(form: NgForm) {
   //   console.log(form);
   // }
+
+  //submit to change user value
   onSubmit() {
     //change user object
     this.submitted = true;
