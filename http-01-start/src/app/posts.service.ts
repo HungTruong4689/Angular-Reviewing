@@ -34,4 +34,34 @@ export class PostsService {
           this.error.next(error.message);
         }
       );
+
+      //fetch Post the link 
+  fetchPost() {
+    let searchParams = new HttpParams();
+    searchParams = searchParams.append("print", "pretty");
+    return this.http
+      .get<{ [key: string]: Post }>(
+        "https://ng-complete-guide-b21b1-default-rtdb.firebaseio.com/posts.json",
+        {
+          headers: new HttpHeaders({ "Custom-Header": "Hello" }),
+          params: searchParams,
+          responseType: "json",
+        }
+      )
+      .pipe(
+        map((responseData: { [key: string]: Post }) => {
+          const postsArray: Post[] = [];
+          for (const key in responseData) {
+            if (responseData.hasOwnProperty(key)) {
+              postsArray.push({ ...responseData[key], id: key });
+            }
+          }
+          return postsArray;
+        }),
+        catchError((errorRes) => {
+          //Send to analytics server
+          return throwError(errorRes);
+        })
+      );
+  }
 }
