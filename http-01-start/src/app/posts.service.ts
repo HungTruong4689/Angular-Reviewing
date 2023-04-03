@@ -64,4 +64,25 @@ export class PostsService {
         })
       );
   }
+   //delete post the link
+   deletePosts() {
+    return this.http
+      .delete(
+        "https://ng-complete-guide-b21b1-default-rtdb.firebaseio.com/posts.json",
+        {
+          observe: "events",
+          responseType: "json",
+        }
+      )
+      .pipe(
+        tap((event) => {
+          console.log(event);
+          if (event.type === HttpEventType.Sent) {
+          }
+          if (event.type === HttpEventType.Response) {
+            console.log(event.body);
+          }
+        })
+      );
+  }
 }
