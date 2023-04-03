@@ -9,5 +9,23 @@ import { LoggingInterceptorService } from "./logging-interceptor.service";
 
 
 //HTTP_INTERCEPTORS
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptorService,
+      multi: true,
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: LoggingInterceptorService,
+      multi: true,
+    },
+  ],
+  bootstrap: [AppComponent],
+})
+
 
 export class AppModule {}
