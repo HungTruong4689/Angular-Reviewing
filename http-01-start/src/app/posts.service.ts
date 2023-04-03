@@ -17,5 +17,21 @@ export class PostsService {
     //embedded link post
    
   }
-  
+  constructor(private http: HttpClient) {}
+   this.http
+      .post<{ name: string }>(
+        "https://ng-complete-guide-b21b1-default-rtdb.firebaseio.com/posts.json",
+        postData,
+        {
+          observe: "response",
+        }
+      )
+      .subscribe(
+        (responseData) => {
+          console.log(responseData);
+        },
+        (error) => {
+          this.error.next(error.message);
+        }
+      );
 }
