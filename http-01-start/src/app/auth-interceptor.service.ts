@@ -13,7 +13,9 @@ export class AuthInterceptorService implements HttpInterceptor {
     //console.log(req.url);
 
     //req.clone
-    
+    const modifiedRequest = req.clone({
+      headers: req.headers.append("Auth", "xyz"),
+    });
 
     //next.handle to 
     return next.handle(modifiedRequest);
