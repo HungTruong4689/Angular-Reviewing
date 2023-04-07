@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  //review promise
   appStatus = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve('stable');
