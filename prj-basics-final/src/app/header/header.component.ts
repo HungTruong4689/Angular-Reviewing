@@ -5,6 +5,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {
+  //Usage of Output
   @Output() featureSelected = new EventEmitter<string>();
 
   //OnSelect function
