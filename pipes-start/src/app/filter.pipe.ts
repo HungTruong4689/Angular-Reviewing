@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
+//set up filter pipe
 @Pipe({
   name: 'filter',
   pure: false,
