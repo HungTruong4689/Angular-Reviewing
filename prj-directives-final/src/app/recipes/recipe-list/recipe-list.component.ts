@@ -29,6 +29,7 @@ export class RecipeListComponent implements OnInit {
   // }
 
   onNewRecipe() {
+    //navigate this route
     this.router.navigate(['new'], { relativeTo: this.route });
   }
 }
