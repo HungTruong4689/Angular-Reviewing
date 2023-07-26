@@ -20,6 +20,7 @@ export class RecipeListComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    //mount data
     this.recipes = this.recipeService.getRecipes();
   }
 
