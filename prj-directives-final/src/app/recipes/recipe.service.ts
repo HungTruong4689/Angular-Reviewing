@@ -24,6 +24,7 @@ export class RecipesService {
 
   constructor(private slService: ShoppingListService) {}
 
+  //getRecipes
   getRecipes() {
     return this.recipes.slice();
   }
