@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
       fragment: 'loading',
     });
   }
+  //login function
   onLogin() {
     this.authService.login();
   }
