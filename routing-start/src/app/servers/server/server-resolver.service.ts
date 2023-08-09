@@ -14,6 +14,7 @@ interface Server {
   status: string;
 }
 
+//Injectable
 @Injectable()
 export class ServerResolver
   implements Resolve<{ id: number; name: string; status: string }>
