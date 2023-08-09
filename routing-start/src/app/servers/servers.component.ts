@@ -16,6 +16,7 @@ export class ServersComponent implements OnInit {
     private route: ActivatedRoute
   ) {}
 
+  //mounted the server
   ngOnInit() {
     this.servers = this.serversService.getServers();
   }
