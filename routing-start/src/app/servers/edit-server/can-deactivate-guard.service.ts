@@ -12,6 +12,7 @@ export interface CanComponentDeactivate {
 export class CanDeactivateGuard
   implements CanDeactivate<CanComponentDeactivate>
 {
+  //deactivate server
   canDeactivate(
     component: CanComponentDeactivate,
     currentRoute: ActivatedRouteSnapshot,
