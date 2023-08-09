@@ -22,6 +22,8 @@ export class EditServerComponent implements OnInit, CanComponentDeactivate {
     private route: ActivatedRoute,
     private router: Router
   ) {}
+
+  //canDeactivate server
   canDeactivate(): Observable<boolean> | Promise<boolean> | boolean {
     if (!this.allowEdit) {
       return true;
