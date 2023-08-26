@@ -8,6 +8,7 @@ export class ShoppingListService {
     new Ingredient('Tomatoes', 10),
   ];
 
+  //getIngredients using slice function
   getIngredients() {
     return this.ingredients.slice();
   }
