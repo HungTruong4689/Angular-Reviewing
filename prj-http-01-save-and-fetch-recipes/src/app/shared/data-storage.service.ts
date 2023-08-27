@@ -16,6 +16,7 @@ export class DataStorageService {
     //http put
     this.http
       .put(
+        //put recipes
         "https://ng-course-recipe-book-65f10.firebaseio.com/recipes.json",
         recipes
       )
