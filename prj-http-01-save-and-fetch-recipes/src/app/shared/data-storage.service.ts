@@ -22,7 +22,7 @@ export class DataStorageService {
       )
       .subscribe((response) => {
         //http subscribe
-        console.log(response);
+        console.log(response); //get response
       });
   }
 
