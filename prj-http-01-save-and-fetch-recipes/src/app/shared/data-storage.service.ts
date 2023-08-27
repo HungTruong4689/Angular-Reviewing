@@ -13,6 +13,7 @@ export class DataStorageService {
   storeRecipes() {
     //getRecipe
     const recipes = this.recipeService.getRecipes();
+    //http put
     this.http
       .put(
         "https://ng-course-recipe-book-65f10.firebaseio.com/recipes.json",
