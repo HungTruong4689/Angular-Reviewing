@@ -26,6 +26,7 @@ export class DataStorageService {
       });
   }
 
+  //fetch recipes
   fetchRecipes() {
     this.http
       .get<Recipe[]>(
