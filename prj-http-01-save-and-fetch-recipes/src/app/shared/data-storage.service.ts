@@ -11,6 +11,7 @@ export class DataStorageService {
   constructor(private http: HttpClient, private recipeService: RecipeService) {}
 
   storeRecipes() {
+    //getRecipe
     const recipes = this.recipeService.getRecipes();
     this.http
       .put(
