@@ -29,7 +29,7 @@ export class RecipeDetailComponent implements OnInit {
       this.recipe = this.recipeService.getRecipe(this.id);
     });
   }
-
+  //onAddToShopppingList
   onAddToShoppingList() {
     this.recipeService.addIngredientsToShoppingList(this.recipe.ingredients);
   }
