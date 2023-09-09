@@ -19,6 +19,7 @@ export class RecipeEditComponent implements OnInit {
     private route: ActivatedRoute,
     //recipeService
     private recipeService: RecipeService,
+    //router
     private router: Router
   ) {}
 
