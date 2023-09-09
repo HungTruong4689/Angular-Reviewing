@@ -30,6 +30,7 @@ export class RecipeEditComponent implements OnInit {
       this.id = +params['id'];
       //edit params
       this.editMode = params['id'] != null;
+      //ininForm
       this.initForm();
     });
   }
