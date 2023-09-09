@@ -38,6 +38,7 @@ export class RecipeEditComponent implements OnInit {
   onSubmit() {
     //create newRecipe
     const newRecipe = new Recipe(
+      //name of recipeForm
       this.recipeForm.value['name'],
       this.recipeForm.value['description'],
       this.recipeForm.value['imagePath'],
