@@ -54,6 +54,7 @@ export class RecipeEditComponent implements OnInit {
       //recipe  addRecipe
       this.recipeService.addRecipe(newRecipe);
     }
+    //cancel recipe
     this.onCancel();
   }
   onAddIngredient() {
