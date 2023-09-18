@@ -42,6 +42,7 @@ export class RecipeEditComponent implements OnInit {
       this.recipeForm.value['name'],
       //description recipeFOrm
       this.recipeForm.value['description'],
+      //imagePath
       this.recipeForm.value['imagePath'],
       this.recipeForm.value['ingredients']
     );
