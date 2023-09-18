@@ -63,7 +63,7 @@ export class RecipeEditComponent implements OnInit {
       new FormGroup({
         name: new FormControl(null, Validators.required), //formControl
         amount: new FormControl(null, [
-          Validators.required,
+          Validators.required, //validator
           Validators.pattern(/^[1-9]+[0-9]*$/),
         ]),
       })
