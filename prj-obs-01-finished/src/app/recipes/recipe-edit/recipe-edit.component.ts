@@ -52,7 +52,7 @@ export class RecipeEditComponent implements OnInit {
       this.recipeService.updateRecipe(this.id, this.recipeForm.value);
     } else {
       //recipe  addRecipe
-      this.recipeService.addRecipe(newRecipe);
+      this.recipeService.addRecipe(newRecipe); //newRecipe
     }
     //cancel recipe
     this.onCancel();
