@@ -14,7 +14,7 @@ export class Recipe {
   ) {
     this.name = name; //name model
     this.description = desc; // desc model
-    this.imagePath = imagePath;
+    this.imagePath = imagePath; // imagePath
     this.ingredients = ingredients;
   }
 }
