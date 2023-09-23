@@ -14,7 +14,7 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
   @ViewChild('f') slForm: NgForm;
   subscription: Subscription; // subscription
   editMode = false; //editmode
-  editedItemIndex: number;
+  editedItemIndex: number; //editedItemIndex
   editedItem: Ingredient;
 
   constructor(private slService: ShoppingListService) {}
