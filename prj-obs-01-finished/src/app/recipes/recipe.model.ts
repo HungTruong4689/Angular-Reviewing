@@ -13,7 +13,7 @@ export class Recipe {
     ingredients: Ingredient[]
   ) {
     this.name = name; //name model
-    this.description = desc;
+    this.description = desc; // desc model
     this.imagePath = imagePath;
     this.ingredients = ingredients;
   }
