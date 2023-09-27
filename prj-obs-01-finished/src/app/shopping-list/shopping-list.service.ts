@@ -29,7 +29,7 @@ export class ShoppingListService {
     // for (let ingredient of ingredients) {
     //   this.addIngredient(ingredient);
     // }
-    this.ingredients.push(...ingredients);
+    this.ingredients.push(...ingredients); //add Ingredients list
     this.ingredientsChanged.next(this.ingredients.slice());
   }
   updateIngredient(index: number, newIngredient: Ingredient) {
