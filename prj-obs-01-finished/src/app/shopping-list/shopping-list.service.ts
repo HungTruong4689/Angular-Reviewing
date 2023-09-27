@@ -30,7 +30,7 @@ export class ShoppingListService {
     //   this.addIngredient(ingredient);
     // }
     this.ingredients.push(...ingredients); //add Ingredients list
-    this.ingredientsChanged.next(this.ingredients.slice());
+    this.ingredientsChanged.next(this.ingredients.slice()); //why next
   }
   updateIngredient(index: number, newIngredient: Ingredient) {
     this.ingredients[index] = newIngredient; // assign newIngredient
