@@ -33,6 +33,6 @@ import { RecipeService } from './recipes/recipe.service';
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule, ReactiveFormsModule], //import module
   providers: [ShoppingListService, RecipeService], //providers module
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent], //bootstrap
 })
 export class AppModule {}
