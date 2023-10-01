@@ -15,7 +15,7 @@ export class RecipeEditComponent implements OnInit {
   recipeForm: FormGroup;
 
   constructor(
-    private route: ActivatedRoute,
+    private route: ActivatedRoute, //activatedRoute
     private recipeService: RecipeService,
     private router: Router
   ) {}
