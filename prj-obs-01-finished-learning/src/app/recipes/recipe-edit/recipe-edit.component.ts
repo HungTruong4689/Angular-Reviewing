@@ -33,7 +33,7 @@ export class RecipeEditComponent implements OnInit {
       this.recipeForm.value['name'], //name form
       this.recipeForm.value['description'], //descriptionm
       this.recipeForm.value['imagePath'], //image Path
-      this.recipeForm.value['ingredients']
+      this.recipeForm.value['ingredients'] //ingredient
     );
     if (this.editMode) {
       this.recipeService.updateRecipe(this.id, newRecipe);
